@@ -11,5 +11,8 @@
     "build": "inferno-scripts build",
     "test": "inferno-scripts test --env=jsdom",
     "eject": "inferno-scripts eject"
+  },
+  "devDependencies": {
+    "babel-plugin-inferno": "^5.1.0"
   }
 }
