@@ -1,0 +1,9 @@
+body {
+    background: rgb(34, 34, 33);
+    font-family: "Courier New", Courier, monospace;
+    color: rgb(2, 100, 175);
+}
+
+header {text-align: center}
+
+.lBlock { float: left; margin: 5px; }
