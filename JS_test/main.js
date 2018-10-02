@@ -13,13 +13,12 @@ if (hourNow > 18) {
     greeting = 'Welcome!';
 }
 
-//console.log(greeting);
-gText = document.getElementById('greetingText');
-//gText.innerHTML() = greeting.toString();
+var gText = document.getElementById('greetingText');
+gText.innerHTML = greeting;
 //console.log(gText);
-gText.innerHTML() = "Hello";
+//gText.innerHTML() = "Hello";
 //document.write('<h3>' + greeting + '</h3>');
 //document.write('<h4>' + today + '</h4>');
-
 var copyright = document.getElementById('copyright');
-copyright.innerHTML() = year.toString();
+copyright.innerHTML = '&copy ' + year.toString();
+
