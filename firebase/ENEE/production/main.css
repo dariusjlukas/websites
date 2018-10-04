@@ -1,3 +1,74 @@
 #line {
     text-decoration: line-through;
 }
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+}
+
+.sideBar {
+ /*   width: 230px; */
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+   /* top: 20px;
+    left: 10px; */
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  
+}
+
+.sideBar a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #2196F3;
+    display: block;
+}
+
+.sideBar a:hover {
+    color: #064579;
+    cursor: default;
+}
+
+.sideBar .hide {
+    position: relative;
+    padding: 0px 0px 0px 16px;
+}
+
+.sideBar .hide #hide {
+    text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    color: gray;
+}
+
+.sideBar .hide #hide:hover {
+    color: #064579;
+    cursor: default;
+}
+
+.main {
+    margin-left: 230px; /* Same width as the sidebar + left position in px */
+    font-size: 1.8em; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+    margin-top: 0px;
+}
+
+.main * {
+    margin-top: 0;
+} 
+
+.main p {
+    margin-left: 20px;
+}
+
+@media screen and (max-height: 450px) and (max-width: 500px) {
+    .sideBar {width: 40%;}
+    .sideBar {padding-top: 15px;}
+    .sideBar a {font-size: 18px;}
+}
