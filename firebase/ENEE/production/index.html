@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personal Ethics Statement</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <link rel="icon" type="image/png"
-     href="favicon.png" />
-     <script type="text/javascript" src="content.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personal Ethics Statement</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script type="text/javascript" src="content.js"></script>
 
 </head>
+
 <body onload="writeIntro()">
-    <div class="sideBar">
-      <div class="hide">
-        <p id ="hide">< hide</p>
+  <div id="sideBar" class="sideBar">
+    <div class="hideButton">
+      <p onclick="hideNav()" id="hide">
+        < hide</p> </div> <p onclick="writeIntro()" href="#">Home/Intro
+      </p>
+      <p onclick="writeArchive()" href="#">Class Archive</p>
+      <p onclick="writeRelevance()" href="#">Relevance</p>
+      <p onClick="writeCOC()" href="#">Personal Code</p>
+      <p href="#">Filter Bubble</p>
+      <p href="#">Listening Challenge</p>
+      <div style='position: fixed; bottom: 0; width:0;'>
+        <a id="sourceLink" href="https://github.com/dariusjlukas/websites">Source</a>
       </div>
-      <a onclick = "writeIntro()" href="#">Home/Intro</a>
-      <a onclick = "writeArchive()" href="#">Class Archive</a>
-      <a onclick = "writeRelevance()" href="#">Relevance</a>
-      <a href="#">Personal Code</a>
-      <a href="#">Filter Bubble</a>
-      <a href="#">Listening Challenge</a>
-      <a style = 'position: fixed; bottom: 0;' href="https://github.com/dariusjlukas/websites">Source</a>
     </div>
-    
+
     <div id="main" class="main">
-        <div style='width: 100%; background-color: #f87c7c;' class="disclaimer">
-            <p style='font-size: .7em; padding: 5px; color: #3d3e3f '>
-              Note: This page is a work in progress. The most up to date source code 
-              can be found at the "Source" link
-            </p>
-          </div>
+      <div style='width: 100%; background-color: #f87c7c;' class="disclaimer">
+        <p style='font-size: .7em; padding: 5px; color: #3d3e3f '>
+          Note: This page is a work in progress. The most up to date source code
+          can be found at the "Source" link
+        </p>
+      </div>
+      <div id="showButton" class="hideButton">  <!--Show button-->
+        <p onclick="showNav()" id="show"></p>
+      </div>
       <h2 id="title" style='padding-top: 10px; text-align: center;'>[Title]</h2>
       <br>
-      <p id="center_content">This page is not displaying correctly, likely due to a javascript 
+      <p id="center_content">This page is not displaying correctly, likely due to a javascript
         problem. This either means javascript is turned off on your browser, or there
         is a bug with the site. For bugs, issues/comments can be submitted at the "source"
         link at the bottom of the menu. Sorry for the inconvenience. 
       </p>
     </div>
 
-    
+
 </body>
 
 
@@ -60,4 +66,5 @@
   firebase.initializeApp(config);
 </script>
 <script type="text/javascript" src="main.js"></script>
+
 </html>

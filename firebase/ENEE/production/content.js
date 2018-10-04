@@ -8,7 +8,7 @@
 
 
 home = `[{
-    "title": "[Ethics Motto]",
+    "title": "Commune Bonum",
     "intro": "Intro: \
     I am a freshman Aerospace Engineering student who is passionate about \
     engineering for a better society. I like engineering because I enjoy \
@@ -52,3 +52,12 @@ relevance = `[{
       of help. \
     "
 }]`;
+
+codeOfConduct = `[{
+    "title": "Personal Code of Ethics",
+    "1": "1. To keep the common good in mind at all times",
+    "2": "2. Not to design or support the design of products with the expressed purpose of causing unnecessary harm",
+    "3": "3. To take every reasonable effort to ensure the product does not cause harm",
+    "4": "4. To avoid making products whose design and/or production cause harm",
+    "5": "5. To be conscious about the ethical issues involved, regardless of my opinion of them"
+}]`
