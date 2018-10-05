@@ -9,6 +9,7 @@
 
 home = `[{
     "title": "Commune Bonum",
+    "subtitle": "(Common Good)",
     "intro": "Intro: \
     I am a freshman Aerospace Engineering student who is passionate about \
     engineering for a better society. I like engineering because I enjoy \
