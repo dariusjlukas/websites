@@ -26,8 +26,8 @@ function writeIntro() {
 function writeArchive() {
     classArchive = JSON.parse(archive);
     title.innerHTML = classArchive[0].title;
-    center_content.style.height = "100%";
-    center_content.innerHTML = "<iframe style='height:100%; border:none;' width='100%' src='archive.html'></iframe>";
+    center_content.style.height = "700px";
+    center_content.innerHTML = "<iframe class='full-height' style='border:none;' width='100%' height='1000px' src='archive.html'></iframe>";
     subtitle.innerHTML = "";
 }
 
