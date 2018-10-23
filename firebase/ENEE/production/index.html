@@ -13,7 +13,7 @@
 
 </head>
 
-<body onload="writeIntro()">
+<body style="height:100%;" onload="writeIntro()">
   <div id="sideBar" class="sideBar">
     <div class="hideButton">
       <p onclick="hideNav()" id="hide">
@@ -22,31 +22,36 @@
       <p onclick="writeArchive()" href="#">Class Archive</p>
       <p onclick="writeRelevance()" href="#">Relevance</p>
       <p onClick="writeCOC()" href="#">Personal Code</p>
-      <p href="#">Filter Bubble</p>
+      <p onClick="writeFilterB()" href="#">Filter Bubble</p>
       <p href="#">Listening Challenge</p>
       <div style='position: fixed; bottom: 0; width:0;'>
         <a id="sourceLink" href="https://github.com/dariusjlukas/websites">Source</a>
       </div>
     </div>
 
-    <div id="main" class="main">
+    <div id="main" class="main full-height">
       <div style='width: 100%; background-color: #f87c7c;' class="disclaimer">
         <p style='font-size: .7em; padding: 5px; color: #3d3e3f '>
           Note: This page is a work in progress. The most up to date source code
           can be found at the "Source" link
         </p>
       </div>
-      <div id="showButton" class="hideButton">  <!--Show button-->
+      <div id="showButton" class="hideButton">
+        <!--Show button-->
         <p onclick="showNav()" id="show"></p>
       </div>
       <h2 id="title" style='padding-top: 10px; text-align: center; margin-bottom: 15px;'>[Title]</h2>
       <h4 id="subtitle" style="text-align: center; padding: 0;"></h4>
       <br>
-      <p id="center_content">This page is not displaying correctly, likely due to a javascript
+      <div style="position: fixed; bottom: 0; width:0;">
+          <p> &zwnj; </p>
+       </div>
+      <p style = "height:100%" id="center_content">This page is not displaying correctly, likely due to a javascript
         problem. This either means javascript is turned off on your browser, or there
-        is a bug with the site. For bugs, issues/comments can be submitted at the "source"
-        link at the bottom of the menu. Sorry for the inconvenience. 
+        is a bug with the site. In the case of a bug, issues/comments can be submitted at the "source"
+        link at the bottom of the menu. Sorry for the inconvenience.
       </p>
+      
     </div>
 
 
@@ -54,7 +59,12 @@
 
 
 <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
 <script>
+  const firebase = require("firebase");
+  // Required for side-effects
+  require("firebase/firestore");
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDUkEVJvL1fMs-BOtWGKZQVNS1Ga523gQs",
@@ -65,6 +75,13 @@
     messagingSenderId: "342648804679"
   };
   firebase.initializeApp(config);
+  // Initialize Cloud Firestore through Firebase
+  var db = firebase.firestore();
+
+  // Disable deprecated features
+  db.settings({
+    timestampsInSnapshots: true
+  });
 </script>
 <script type="text/javascript" src="main.js"></script>
 

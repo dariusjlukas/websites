@@ -26,7 +26,8 @@ function writeIntro() {
 function writeArchive() {
     classArchive = JSON.parse(archive);
     title.innerHTML = classArchive[0].title;
-    center_content.innerHTML = "";
+    center_content.style.height = "100%";
+    center_content.innerHTML = "<iframe style='height:100%; border:none;' width='100%' src='archive.html'></iframe>";
     subtitle.innerHTML = "";
 }
 
@@ -45,4 +46,25 @@ function writeCOC() {
     subtitle.innerHTML = "";
 }
 
+function writeFilterB() {
+    filterText = JSON.parse(filter);
+    title.innerHTML = filterText[0].title;
+    center_content.innerHTML = filterText[0].content;
+    subtitle.innerHTML = "";
+}
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
 

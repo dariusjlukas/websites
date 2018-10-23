@@ -1,3 +1,11 @@
+html, body {
+    height: 100%;
+  }
+  
+  .full-height {
+    height: 100%;
+  }
+
 #line {
     text-decoration: line-through;
 }
@@ -51,7 +59,7 @@ body {
 
 .main {
     margin-left: 230px; /* Same width as the sidebar + left position in px */
-    font-size: 1.8em; /* Increased text to enable scrolling */
+    font-size: 1.6vw; /* Increased text to enable scrolling */
     padding: 0px 10px;
     margin-top: 0px;
     transition: 0.2s;
@@ -101,8 +109,34 @@ body {
     margin-left: 0;
 }
 
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
 @media screen and (max-height: 450px) and (max-width: 500px) {
-    .sideBar {width: 40%;}
+    .sideBar {width: 100%;}
     .sideBar {padding-top: 15px;}
     .sideBar a {font-size: 18px;}
 }

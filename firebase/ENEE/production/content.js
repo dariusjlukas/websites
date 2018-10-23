@@ -61,4 +61,36 @@ codeOfConduct = `[{
     "3": "3. To take every reasonable effort to ensure the product does not cause harm",
     "4": "4. To avoid making products whose design and/or production cause harm",
     "5": "5. To be conscious about the ethical issues involved, regardless of my opinion of them"
+}]`;
+
+filter = `[{
+    "title": "Filter Bubble",
+    "content": " \
+    Since I do not use social media on any regular basis, my primary filter bubbles would \
+    be the newsfeed on my phone from Google and the common-minded group of people I generally \
+    associate with. I would consider the news feed a filter bubble of sorts because Google \
+    customizes the news to meet my interests, as I ask it to do. Similarly, hanging around \
+    with people of similar mindsets tends to create a circle of confirmation, which is not \
+    always the best for finding the truth, since the scientific method would require attempting \
+    to prove our ideas wrong, and thus supporting our ideas by an inability to disprove them. \
+    In order to “break out” of my filter buble per say, I spent some time reading articles that \
+    are less aligned with what I support, such as articles that show Elon Musk in a less than \
+    perfect light and blogs that support Intel over AMD. In general, I can’t say my views were \
+    changed, since I already knew the argument for Intel, and my inability to find new information \
+    that would sway me toward Intel only confirmed my current belief that AMD is good price to \
+    performance. Again, in the case of anti-Elon articles, I could not find compelling enough \
+    evidence to reverse my opinion. Although, one example of something that I did change my \
+    mind on was how I ride my bike on campus. Like many of my friends, I ride my bike to get \
+    around campus, and also like many of my friends, I was of the opinion that the signs put \
+    up by DOTS telling bikers to ride on the sidewalk and stop at stop signs were silly at \
+    best. Since everyone I usually talked to agreed, I had no motivation to do anything \
+    different. But, I decided to read a few forum threads by drivers who were complaining \
+    about bikers to learn about the other side of the argument, and I realized that the \
+    argument for bikers following standard road rules is sound. This led me to check \
+    Maryland transportation law, and I found that bikes are in fact required to follow all \
+    road signs and are prohibited from riding on sidewalks unless local laws specifically \
+    allow it (and Prince George’s County doesn’t). This is an example of breaking out of \
+    my bubble causing me to realize that my argument was not as sound as I thought it was, \
+    which led to me changing the way I ride my bike to class.\
+    "
 }]`
