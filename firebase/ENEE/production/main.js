@@ -41,7 +41,7 @@ function writeRelevance() {
 function writeCOC() {
     COC = JSON.parse(codeOfConduct);
     title.innerHTML = COC[0].title;
-    center_content.innerHTML = COC[0][1] + "<br>" + COC[0][2] + "<br>" + COC[0][3] + "<br>" + COC[0][4] + "<br>" + COC[0][5];
+    center_content.innerHTML = COC[0][1] + "<br>" + COC[0][2] + "<br>" + COC[0][3] + "<br>" + COC[0][4] + "<br>" + COC[0][5] + "<br>" + COC[0][6] + "<br>" + COC[0][7];
     //center_content.style = "margin-left: 2em";
     subtitle.innerHTML = "";
 }
@@ -50,6 +50,29 @@ function writeFilterB() {
     filterText = JSON.parse(filter);
     title.innerHTML = filterText[0].title;
     center_content.innerHTML = filterText[0].content;
+    subtitle.innerHTML = "";
+}
+
+
+// var docRef = db.collection("content").doc("listening");
+
+// docRef.get().then(function(doc) {
+//     if (doc.exists) {
+//         console.log("Document data:", doc.data());
+//     } else {
+//         // doc.data() will be undefined in this case
+//         console.log("No such document!");
+//     }
+// }).catch(function(error) {
+//     console.log("Error getting document:", error);
+// });
+
+
+
+function writeListen() {
+    listenText = JSON.parse(listen);
+    title.innerHTML = listenText[0].title;
+    center_content.innerHTML = listenText[0].content;
     subtitle.innerHTML = "";
 }
 
